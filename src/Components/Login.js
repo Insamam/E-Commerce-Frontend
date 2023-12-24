@@ -54,9 +54,6 @@ const Login = () => {
                     </label>
                   </div>
                 </div>
-                {/* <a href="#" className="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500">
-                  Forgot password?
-                </a> */}
               </div>
               <button
                 type="submit"
@@ -65,10 +62,10 @@ const Login = () => {
                 Sign in
               </button>
               <p className="text-sm font-light text-gray-500 dark:text-gray-400">
-                Don’t have an account yet?{' '}
-                <Link to='/register'><div className="font-medium text-primary-600 hover:underline dark:text-primary-500">
+                Don't have an account yet?{' '}
+                <Link to="/register" className="font-medium text-primary-600 hover:underline dark:text-primary-500">
                   Sign up
-                </div></Link>
+                </Link>
               </p>
             </form>
           </div>

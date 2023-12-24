@@ -10,18 +10,18 @@ const Register = () => {
             <h1 className="text-xl font-bold leading-tight tracking-tight text-secondary-900 md:text-2xl dark:text-white">
               Create an account
             </h1>
-            <form className="space-y-4 md:space-y-6" action="#">
+            <form className="space-y-4 md:space-y-6" action="#" autoComplete="on">
+              <div>
+                <label htmlFor="fullName" className="block mb-2 text-sm font-medium text-secondary-900 dark:text-white">Full Name</label>
+                <input type="text" name="fullName" id="fullName" autoComplete="name" className="bg-secondary-50 border border-secondary-300 text-secondary-900 sm:text-sm rounded-lg focus:ring-secondary-600 focus:border-secondary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your Name" required />
+              </div>
               <div>
                 <label htmlFor="email" className="block mb-2 text-sm font-medium text-secondary-900 dark:text-white">Your email</label>
-                <input type="email" name="email" id="email" className="bg-secondary-50 border border-secondary-300 text-secondary-900 sm:text-sm rounded-lg focus:ring-secondary-600 focus:border-secondary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required />
+                <input type="email" name="email" id="email" autoComplete="email" className="bg-secondary-50 border border-secondary-300 text-secondary-900 sm:text-sm rounded-lg focus:ring-secondary-600 focus:border-secondary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required />
               </div>
               <div>
                 <label htmlFor="password" className="block mb-2 text-sm font-medium text-secondary-900 dark:text-white">Password</label>
-                <input type="password" name="password" id="password" placeholder="••••••••" className="bg-secondary-50 border border-secondary-300 text-secondary-900 sm:text-sm rounded-lg focus:ring-secondary-600 focus:border-secondary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
-              </div>
-              <div>
-                <label htmlFor="confirm-password" className="block mb-2 text-sm font-medium text-secondary-900 dark:text-white">Confirm password</label>
-                <input type="confirm-password" name="confirm-password" id="confirm-password" placeholder="••••••••" className="bg-secondary-50 border border-secondary-300 text-secondary-900 sm:text-sm rounded-lg focus:ring-secondary-600 focus:border-secondary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+                <input type="password" name="password" id="password" autoComplete="new-password" placeholder="••••••••" className="bg-secondary-50 border border-secondary-300 text-secondary-900 sm:text-sm rounded-lg focus:ring-secondary-600 focus:border-secondary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
               </div>
               <div className="flex items-start">
                 <div className="flex items-center h-5">
